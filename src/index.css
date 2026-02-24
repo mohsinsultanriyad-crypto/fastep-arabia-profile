@@ -123,5 +123,19 @@
   .brochure-page {
     page-break-after: always;
     page-break-inside: avoid;
+    break-after: page;
+    break-inside: avoid;
+  }
+
+  body {
+    background: white !important;
+  }
+
+  .bg-muted {
+    background: white !important;
+  }
+
+  .space-y-1 > * + * {
+    margin-top: 0 !important;
   }
 }

@@ -1,8 +1,9 @@
 import heroImage from "@/assets/hero-industrial.jpg";
+import logo from "@/assets/fastep-logo.png";
 
 const CoverPage = () => {
   return (
-    <section className="brochure-page relative flex flex-col justify-end bg-secondary">
+    <section className="brochure-page relative flex flex-col justify-between bg-secondary print:break-after-page">
       <div className="absolute inset-0">
         <img
           src={heroImage}
@@ -10,6 +11,10 @@ const CoverPage = () => {
           className="w-full h-full object-cover opacity-40"
         />
         <div className="absolute inset-0 bg-secondary/70" />
+      </div>
+
+      <div className="relative z-10 p-12 md:p-16 pt-10">
+        <img src={logo} alt="FASTEP ARABIA Logo" className="h-16 md:h-20 object-contain" />
       </div>
 
       <div className="relative z-10 p-12 md:p-16 pb-20">
