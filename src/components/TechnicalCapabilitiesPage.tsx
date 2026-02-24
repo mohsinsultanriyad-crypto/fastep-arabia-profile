@@ -1,4 +1,5 @@
 import cyberSecurity from "@/assets/cyber-security.jpg";
+import thermalCamera from "@/assets/thermal-camera.jpg";
 import {
   ScanEye, Brain, UserCheck, Car, ShieldCheck,
   Command, Database
@@ -23,18 +24,24 @@ const TechnicalCapabilitiesPage = () => {
         <div className="section-divider" />
       </div>
 
-      <div className="relative mb-10">
-        <img src={cyberSecurity} alt="Cyber security visualization" className="w-full h-48 object-cover" />
-        <div className="absolute bottom-0 left-0 right-0 h-1 bg-accent" />
+      <div className="grid grid-cols-2 gap-3 mb-10">
+        <div className="relative">
+          <img src={cyberSecurity} alt="Cyber security visualization" className="w-full h-44 object-cover" />
+          <div className="absolute bottom-0 left-0 right-0 h-1 bg-accent" />
+        </div>
+        <div className="relative">
+          <img src={thermalCamera} alt="Thermal imaging camera view of industrial facility" className="w-full h-44 object-cover" />
+          <div className="absolute bottom-0 left-0 right-0 h-1 bg-primary" />
+        </div>
       </div>
 
-      <div className="space-y-6">
-        {capabilities.map(({ icon: Icon, label, desc }) => (
+      <div className="space-y-5">
+        {capabilities.map(({ icon: Icon, label, desc }, i) => (
           <div key={label} className="flex items-start gap-4">
             <div className="w-10 h-10 bg-primary flex items-center justify-center flex-shrink-0">
               <Icon className="w-5 h-5 text-primary-foreground" />
             </div>
-            <div>
+            <div className="flex-1 border-b border-border pb-4">
               <h4 className="text-sm font-heading font-bold uppercase tracking-wide text-foreground mb-1">
                 {label}
               </h4>

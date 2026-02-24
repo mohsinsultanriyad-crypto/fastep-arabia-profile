@@ -1,6 +1,8 @@
 import cctvImage from "@/assets/cctv-camera.jpg";
 import serverRoom from "@/assets/server-room.jpg";
 import accessControl from "@/assets/access-control.jpg";
+import fiberOptic from "@/assets/fiber-optic.jpg";
+import videoWall from "@/assets/video-wall.jpg";
 import {
   Camera, Network, Fingerprint, Monitor, Shield, Wrench,
   Cable, Radio, Lock
@@ -29,16 +31,31 @@ const CoreServicesPage = () => {
         <div className="section-divider" />
       </div>
 
-      <div className="grid grid-cols-3 gap-3 mb-10">
-        <img src={cctvImage} alt="CCTV camera at industrial facility" className="w-full h-32 object-cover" />
-        <img src={serverRoom} alt="Server room with network cables" className="w-full h-32 object-cover" />
-        <img src={accessControl} alt="Biometric access control device" className="w-full h-32 object-cover" />
+      {/* Image mosaic */}
+      <div className="grid grid-cols-5 gap-2 mb-10">
+        <div className="col-span-2 row-span-2">
+          <img src={cctvImage} alt="CCTV camera at industrial facility" className="w-full h-full object-cover" />
+        </div>
+        <div className="col-span-3">
+          <img src={videoWall} alt="Video wall command center" className="w-full h-32 object-cover" />
+        </div>
+        <div>
+          <img src={serverRoom} alt="Server room" className="w-full h-32 object-cover" />
+        </div>
+        <div>
+          <img src={fiberOptic} alt="Fiber optic cables" className="w-full h-32 object-cover" />
+        </div>
+        <div>
+          <img src={accessControl} alt="Access control device" className="w-full h-32 object-cover" />
+        </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
         {services.map(({ icon: Icon, label }) => (
           <div key={label} className="flex items-center gap-3 py-3 border-b border-border">
-            <Icon className="w-5 h-5 text-primary flex-shrink-0" />
+            <div className="w-8 h-8 bg-primary flex items-center justify-center flex-shrink-0">
+              <Icon className="w-4 h-4 text-primary-foreground" />
+            </div>
             <span className="text-sm font-heading font-semibold uppercase tracking-wide text-foreground">
               {label}
             </span>
