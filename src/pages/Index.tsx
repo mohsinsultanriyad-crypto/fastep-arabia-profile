@@ -1,11 +1,24 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import CoverPage from "@/components/CoverPage";
+import AboutPage from "@/components/AboutPage";
+import VisionMissionPage from "@/components/VisionMissionPage";
+import CoreServicesPage from "@/components/CoreServicesPage";
+import TechnicalCapabilitiesPage from "@/components/TechnicalCapabilitiesPage";
+import IndustriesPage from "@/components/IndustriesPage";
+import ProjectsClientsPage from "@/components/ProjectsClientsPage";
+import ContactPage from "@/components/ContactPage";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <div className="bg-muted">
+      <div className="space-y-1">
+        <CoverPage />
+        <AboutPage />
+        <VisionMissionPage />
+        <CoreServicesPage />
+        <TechnicalCapabilitiesPage />
+        <IndustriesPage />
+        <ProjectsClientsPage />
+        <ContactPage />
       </div>
     </div>
   );
