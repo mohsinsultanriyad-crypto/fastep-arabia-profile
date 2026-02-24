@@ -6,6 +6,7 @@ import TechnicalCapabilitiesPage from "@/components/TechnicalCapabilitiesPage";
 import IndustriesPage from "@/components/IndustriesPage";
 import ProjectsClientsPage from "@/components/ProjectsClientsPage";
 import ContactPage from "@/components/ContactPage";
+import PrintButton from "@/components/PrintButton";
 
 const Index = () => {
   return (
@@ -20,6 +21,7 @@ const Index = () => {
         <ProjectsClientsPage />
         <ContactPage />
       </div>
+      <PrintButton />
     </div>
   );
 };
