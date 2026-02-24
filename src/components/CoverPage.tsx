@@ -8,9 +8,9 @@ const CoverPage = () => {
         <img
           src={heroImage}
           alt="Industrial refinery at dusk"
-          className="w-full h-full object-cover opacity-40"
-        />
-        <div className="absolute inset-0 bg-secondary/70" />
+          className="w-full h-full object-cover opacity-40" />
+
+        <div className="absolute inset-0 border-primary-foreground bg-white/0" />
       </div>
 
       <div className="relative z-10 p-12 md:p-16 pt-10">
@@ -38,8 +38,8 @@ const CoverPage = () => {
           </p>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default CoverPage;
