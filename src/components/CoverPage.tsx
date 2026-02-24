@@ -14,7 +14,7 @@ const CoverPage = () => {
       </div>
 
       <div className="relative z-10 p-12 md:p-16 pt-10">
-        <img src={logo} alt="FASTEP ARABIA Logo" className="h-16 md:h-20 object-contain" />
+        <img src={logo} alt="FASTEP ARABIA Logo" className="h-10000000 md:h-2000000 object-contain" />
       </div>
 
       <div className="relative z-10 p-12 md:p-16 pb-20">
